@@ -1,4 +1,5 @@
 @charset "utf-8";
+
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 :root {
@@ -32,25 +33,65 @@ body {
 }
 
 header {
-    background-color: var(--cor4);
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
 }
 
 header > h1 {
     color: white;
     font-family: var(--fonte-destaque);
+    font-size: 3em;
+    margin-bottom: 20px;   
 }
 
 header > p{
+    font-family: var(--font-padrao);
+    font-size: 1.2em;
     color: white;
+    max-width: 800px;/*recursividade*/
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: auto;   
 }
 
 nav {
-    background-color: var(--cor5);   
+    background-color: var(--cor5);  
+    padding: 10px; 
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.197);
 }
+
+nav a {
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: .5s;
+}
+ nav a:hover {
+    background-color: var(--cor3);
+    color: var(--cor5);
+ }
 
 main {
     background-color: white;
+    min-width: 300px; /* responsividade do conteudo*/
+    max-width: 1000px; /* responsividade do conteudo*/
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
 }
+
+main img {
+    width: 100%;
+}
+
 
 main h1 {
     color:var(--cor5);
@@ -58,13 +99,46 @@ main h1 {
 }
 
 main h2 {
-    font-family: var(--fonte-android);
+    font-family: var(--fonte-android);color: var(--cor4);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    text-indent: 8px;
+}
+
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;/*altura das linhas*/
+}
+
+main strong {
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor1);
+    padding: 2px 6pxS;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
+}
+
+main img.pequena{
+    max-width: 350px;
+    margin: auto;
 }
 
 footer {
     background-color: var(--cor5);
     color: white;
 }
-
 
 
